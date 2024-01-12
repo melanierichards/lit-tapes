@@ -2,7 +2,36 @@
 layout: layouts/global.njk
 ---
 
-<h1>{{ title }}</h1>
+<h1>{{ title }} — {{ author }}</h1>
+
+<img src="{{ site.imagesContent }}/{{ bookCover }}" alt="Cover of the book {{ title }}">
+
+<h2 class="c-meta-heading">Book details</h2>
+<ul>
+  <li>
+    <p>Genres: {{ bookGenres }}</p>
+  </li>
+  <li>
+    <p>{{ bookPages }} pages</p>
+  </li>
+  <li>
+    <a href="{{ bookLink }}">View description on Bookshop</a>
+  </li>
+</ul>
+
+<h2 class="c-meta-heading">Playlist details</h2>
+<ul>
+  <li>
+    <p>{{ playlistTracks }} tracks</p>
+  </li>
+  <li>
+    <p>Runtime: {{ playlistRuntime }}</p>
+  </li>
+  <li>
+    <a href="{{ playlistLink }}">Listen to playlist on Tidal</a>
+  </li>
+</ul>
+
 {{ content | safe }}
 
 {% include "partials/c-pagination--post.njk" %}

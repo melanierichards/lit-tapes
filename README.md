@@ -31,40 +31,32 @@ Playlists made from songs mentioned in books
 | `npm run lint:fix`           | Run eslint and fix issues    |
 | `npm run validate`           | Run html-validate            |
 
-## Front-Matter
+## Post Template
 
 ```
 ---
 title: 
-date: 2023-##-##
-tags: ["posts", "foo", "bar"]
-featureSrc: (Omit "-m", which is added automatically)
-featureExt: 
-featureAlt: 
+date: 2024-
+author: 
+bookCover: title.webp
+bookGenres: 
+bookPages: 
+bookLink: 
+playlistTracks: 
+playlistRuntime: 00:00:00
+playlistLink: 
+tags: ["posts"]
 ---
-```
 
-## Media
+## Music in this book
 
-### Blog image sizes
+## Playlist
 
-| Size | PX width |
-| ---: | -------: |
-| s    | 600      |
-| m    | 800      |
-| l    | 1200     |
-| xl   | 2000     |
+## Albums Mentioned
 
-### Responsive image include
-
-Filename, extension, max size, alt text, classes:
+## Artists Otherwise Mentioned
 
 ```
-{% responsiveImage "melanierichards-", "jpg", "xl", "Alt", "" %}
-```
-
-* Max size can be `l` or `xl`
-* Classes can include `c-media--limit-width`
 
 ### SVG sprite references
 

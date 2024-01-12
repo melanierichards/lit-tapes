@@ -8,9 +8,9 @@ module.exports = function (eleventyConfig) {
   // UNIVERSAL
 
     // Don't try to build asset files, just transparently copy them through
-    eleventyConfig.addPassthroughCopy('assets');
-    eleventyConfig.addPassthroughCopy('manifest.webmanifest');
-    eleventyConfig.addPassthroughCopy('robots.txt');
+    eleventyConfig.addPassthroughCopy('src/assets');
+    eleventyConfig.addPassthroughCopy('src/manifest.webmanifest');
+    eleventyConfig.addPassthroughCopy('src/robots.txt');
 
     // Prettify slug names
     /*
@@ -53,21 +53,6 @@ module.exports = function (eleventyConfig) {
       // Machine-readable dates
       eleventyConfig.addFilter("machineDate", function(value) {
         return DateTime.fromJSDate(value, {zone: 'utc'}).toISO();
-      });
-
-      // Prettify dates
-      eleventyConfig.addFilter("prettyDate", function(value) {
-        return DateTime.fromJSDate(value, {zone: 'utc'}).toFormat('MMM dd, yyyy');
-      });
-
-      // Prettify ISO dates
-      eleventyConfig.addFilter("prettyISODate", function(value) {
-        return DateTime.fromISO(value, {zone: 'utc'}).toFormat('MMM dd, yyyy');
-      });
-
-      // Reduce date to year
-      eleventyConfig.addFilter("yearOnlyDate", function(value) {
-        return DateTime.fromJSDate(value, {zone: 'utc'}).toFormat('yyyy');
       });
 
     /* EXTRA MD OPTIONS
