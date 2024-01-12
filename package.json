@@ -1,7 +1,7 @@
 {
-  "name": "palindrome",
+  "name": "lit-tapes",
   "version": "1.0.0",
-  "description": "Personal boilerplate for Eleventy projects",
+  "description": "Playlists made from songs mentioned in books",
   "main": "index.js",
   "scripts": {
     "sass": "npx sass --style=compressed src/assets/sass/style.scss src/assets/css/style.css",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/melanierichards/palindrome.git"
+    "url": "git+https://github.com/melanierichards/lit-tapes.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/melanierichards/palindrome/issues"
+    "url": "https://github.com/melanierichards/lit-tapes/issues"
   },
-  "homepage": "https://github.com/melanierichards/palindrome#readme",
+  "homepage": "https://github.com/melanierichards/lit-tapes#readme",
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
     "eslint": "^7.24.0",

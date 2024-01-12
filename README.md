@@ -1,21 +1,10 @@
-# Palindrome
+# Lit Tapes
 
-Personal boilerplate for Eleventy projects
-
-## Not Included
-
-Heavier-lift techniques that may not be appropriate for every project, but can be referenced from another project:
-
-| Technique                  | Project with example         |
-| :------------------------- | :--------------------------- |
-| Netlify comment forms      | World Snacks                 |
-| Paginating tagged items    | Personal website             |
-| Webmentions                | Personal website             |
+Playlists made from songs mentioned in books
 
 ## Setup from Template Checklist
 
-* [ ] Update `package.json`, `_data/site.json`, and `feed.njk` with project details
-* [ ] If not using posts: delete `feed.njk`, RSS code in `eleventy.js`, post and pagination bits in `_includes`
+* [x] Update `package.json`, `_data/site.json`, and `feed.njk` with project details
 * [ ] Go thru `eleventy.js` and un-comment or delete utilities
 * [ ] Update or remove `icon-sprite.njk`
 * [ ] Update `head.njk` with any info for: RSS, social metadata, icons
@@ -47,7 +36,7 @@ Heavier-lift techniques that may not be appropriate for every project, but can b
 ```
 ---
 title: 
-date: 2021-##-##
+date: 2023-##-##
 tags: ["posts", "foo", "bar"]
 featureSrc: (Omit "-m", which is added automatically)
 featureExt: 

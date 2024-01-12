@@ -1,10 +1,9 @@
 {
-  "domain": "my.melanie-richards.com",
-  "url": "https://my.melanie-richards.com",
-  "title": "My Site",
-  "description": "",
+  "domain": "littapes.melanie-richards.com",
+  "url": "https://littapes.melanie-richards.com",
+  "title": "Lit Tapes — Melanie Richards",
+  "description": "Playlists made from songs mentioned in books",
   "images": "/assets/images",
   "imagesContent": "/assets/images/content",
-  "videosContent": "/assets/videos/content",
-  "email": ""
+  "videosContent": "/assets/videos/content"
 }
