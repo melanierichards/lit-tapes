@@ -9,6 +9,13 @@ bookLink: https://bookshop.org/a/15644/9781683693406
 playlistTracks: 38
 playlistRuntime: 02:48:28
 playlistLink: https://tidal.com/browse/playlist/94392fb6-195b-4802-8e8c-8b3272b0ce0d
+cassDeco: bandTop
+cassColorDesc: black and red-violet
+cassColorScheme: dark
+cassColor: "#000"
+cassthingyColor: "#3b3b3b"
+cassLabelColor: "#444"
+cassBandColor: "#BB0092"
 tags: ["posts"]
 ---
 

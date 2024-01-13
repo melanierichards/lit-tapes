@@ -1,4 +1,5 @@
 <li class="c-post-item">
+  {% include "partials/cassette.njk" %}
   {% if item.data.featureSrc %}
     <img loading="lazy" width="800" height="528" class="c-post-item__thumb" alt="{{ item.data.featureAlt }}">
   {% endif %}

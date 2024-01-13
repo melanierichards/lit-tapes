@@ -1,0 +1,55 @@
+{# Set all color variables from post frontmatter data #}
+{% if item.data.cassColorScheme == "light" %}
+  {% set circleColor = "rgba(0,0,0,.2)" %}
+  {% set tapeWindowColor = "rgba(0,0,0,.4)" %}
+{% else %}
+  {% set circleColor = "rgba(255,255,255,.4)" %}
+  {% set tapeWindowColor = "rgba(255,255,255,.2)" %}
+{% endif %}
+{% set cassColor = item.data.cassColor %}
+{% set thingyColor = item.data.cassthingyColor %}
+{% set labelColor = item.data.cassLabelColor %}
+{% set BandColor = item.data.cassBandColor %}
+{% set stripe1 = item.data.cassStripe1 %}
+{% set stripe2 = item.data.cassStripe2 %}
+{% set stripe3 = item.data.cassStripe3 %}
+
+<svg role="img" class="c-cass" xmlns="http://www.w3.org/2000/svg" width="220" height="142" fill="none">
+  <title>
+    A cassette tape illustration matching the cover of the book {{ item.data.title }}. Colors are {{ item.data.cassColorDesc }}
+    {% if item.data.cassDeco == "bandTop" or item.data.cassDeco == "bandBottom" %}
+      and the cassette label has a band of color on it.
+    {% endif %}
+    {% if item.data.cassDeco == "stripes" %}
+      and the cassette label has a 3 stripes of color on it.
+    {% endif %}
+  </title>
+  <rect class="c-cass__body" width="220" height="142" {% if cassColor %}fill="{{ cassColor }}"{% else %}fill="#333"{% endif %} rx="6"/>
+  <path class="c-cass__thingy" {% if thingyColor %}fill="{{ thingyColor }}"{% else %}fill="#555"{% endif %} d="M178 113H41l-8 29h153l-8-29Z"/>
+  <g class="c-cass__screws">
+    <circle cx="8.5" cy="8.5" r="3.5" fill="{{ circleColor }}"/>
+    <circle cx="211.5" cy="8.5" r="3.5" fill="{{ circleColor }}"/>
+    <circle cx="8.5" cy="133.5" r="3.5" fill="{{ circleColor }}"/>
+    <circle cx="211.5" cy="133.5" r="3.5" fill="{{ circleColor }}"/>
+  </g>
+  <path class="c-cass__label" {% if labelColor %}fill="{{ labelColor }}"{% else %}fill="#FEFEFE"{% endif %} d="m10 25 11-11h178l11 11v81H10V25Z"/>
+  {% if item.data.cassDeco == "bandTop" %}
+    <path class="c-cass__band-top" d="M210 48H10V25L21 14H199L210 25V48Z" fill="{{ BandColor }}"/>
+  {% endif %}
+  {% if item.data.cassDeco == "bandBottom" %}
+    <rect class="c-cass__band-bottom" x="10" y="72" width="200" height="34" fill=" {{ BandColor }}"/>
+  {% endif %}
+  {% if item.data.cassDeco == "stripes" %}
+    <g class="c-cass__stripes">
+      <path fill="{{ stripe3 }}" d="M10 46V32l42.314 42.314A16 16 0 0 0 63.627 79H210v9H59.894a18 18 0 0 1-12.653-5.197L10 46Z"/>
+      <path fill="{{ stripe2 }}" d="M10 60V46l38.338 37.446A16 16 0 0 0 59.518 88H210v9H55.747a18 18 0 0 1-12.472-5.022L10 60Z"/>
+      <path fill="{{ stripe1 }}" d="M10 74V60l35.4 32.746A16 16 0 0 0 56.266 97H210v9H52.415c-4.451 0-8.745-1.65-12.051-4.63L10 74Z"/>
+    </g>
+  {% endif %}
+  <g class="c-cass__tape-house">
+    <rect class="c-cass__tape-house-bg" width="130" height="36" x="45" y="48" {% if cassColor %}fill="{{ cassColor }}"{% else %}fill="#333"{% endif %} rx="18"/>
+    <circle cx="64" cy="66" r="12" fill="{{ circleColor }}"/>
+    <circle cx="156" cy="66" r="12" fill="{{ circleColor }}"/>
+    <path class="c-cass__tape-window" fill="{{ tapeWindowColor }}" d="M86 58h48v16H86z"/>
+  </g>
+</svg>

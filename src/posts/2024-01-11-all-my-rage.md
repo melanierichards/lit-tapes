@@ -9,6 +9,15 @@ bookLink: https://bookshop.org/a/15644/9780593202364
 playlistTracks: 46
 playlistRuntime: 03:44:55
 playlistLink: https://tidal.com/browse/playlist/360e99da-44d3-4dd0-86c4-c762be22c3da
+cassDeco: stripes
+cassColorDesc: beige, violet, and red
+cassColorScheme: light
+cassColor: "#F7E8C7"
+cassLabelColor: "#FDFAF2"
+cassthingyColor: "#FBF2E0"
+cassStripe1: "#FA1714"
+cassStripe2: "#BB147C"
+cassStripe3: "#850AB5"
 tags: ["posts"]
 ---
 
