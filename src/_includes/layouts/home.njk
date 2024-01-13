@@ -5,7 +5,7 @@ layout: layouts/global.njk
 <h1>{{ title }}</h1>
 {{ content | safe }}
 
-<ul class="c-post-list">
+<ul class="u-simple-list | c-post-list">
   {% for item in collections.posts | reverse %}
     {% include "partials/c-post-item.njk" %}
   {% endfor %}
