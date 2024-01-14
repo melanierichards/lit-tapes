@@ -8,6 +8,7 @@ main {
   border: 1px solid currentColor;
   border-radius: 12px;
   margin-top: var(--space-primary);
+  overflow: hidden; /* Clip outline from post grid */
 }
 
 section, .l-section {

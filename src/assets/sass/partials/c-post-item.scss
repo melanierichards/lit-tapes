@@ -5,7 +5,14 @@
  */
 
 .c-post-item {
-  align-self: center;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  border-bottom: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  display: flex;
+  flex-direction: column;
+  margin: 0 -1px -1px 0;
   padding: var(--space-primary);
   position: relative;
   text-align: center;
