@@ -60,15 +60,25 @@ tags: ["posts"]
 
 ## Music in this book
 
-## Playlist
+{% sectionEnd "postDetails" %}
 
-## Albums Mentioned
+{% sectionStart "playlist", "Playlist" %}
+{% tidalPlayer "ID from Tidal" %}
+{% sectionEnd %}
 
-## Artists Otherwise Mentioned
+{% sectionStart "albums", "Albums Mentioned" %}
+{% sectionEnd %}
+
+{% sectionStart "artists", "Artists Otherwise Mentioned" %}
+{% sectionEnd %}
 
 ```
 
-### SVG sprite references
+### About shortcodes
+
+Because layout elements are interspersed with post content, use the `sectionStart` shortcode in place of usual `## Heading Level 2` markdown. `sectionEnd` just creates a closing section tag; when passed `"postDetails"` it also closes the final div in that special section.
+
+## SVG sprite references
 
 ```
 <svg role="image" focusable="false" class="c-rating" viewBox="0 0 20 20" width="20" height="20" xmlns="http://www.w3.org/2000/svg">

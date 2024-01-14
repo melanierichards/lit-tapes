@@ -3,7 +3,7 @@ layout: layouts/global.njk
 ---
 
 <h1 class="u-vis-hidden">Lit Tapes</h1>
-<div class="tagline">{{ content | safe }}</div>
+<div class="h1 | tagline">{{ content | safe }}</div>
 <h2 id="books-heading" class="u-vis-hidden">Books with Playlists</h2>
 <ul aria-labelledby="books-heading" class="u-simple-list | cass-grid">
   {% for item in collections.posts | reverse %}

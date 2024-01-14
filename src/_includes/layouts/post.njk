@@ -2,35 +2,37 @@
 layout: layouts/global.njk
 ---
 
-<h1>{{ title }} — {{ author }}</h1>
+<section>
+  <h1>
+    <span class="h2">Book</span>
+    {{ title }} — {{ author }}
+  </h1>
+</section>
 
-<img src="{{ site.imagesContent }}/{{ bookCover }}" alt="Cover of the book {{ title }}">
-
-<h2 class="c-meta-heading">Book details</h2>
-<ul>
-  <li>
-    <p>Genres: {{ bookGenres }}</p>
-  </li>
-  <li>
-    <p>{{ bookPages }} pages</p>
-  </li>
-  <li>
-    <a href="{{ bookLink }}">View description on Bookshop</a>
-  </li>
-</ul>
-
-<h2 class="c-meta-heading">Playlist details</h2>
-<ul>
-  <li>
-    <p>{{ playlistTracks }} tracks</p>
-  </li>
-  <li>
-    <p>Runtime: {{ playlistRuntime }}</p>
-  </li>
-  <li>
-    <a href="{{ playlistLink }}">Listen to playlist on Tidal</a>
-  </li>
-</ul>
+<section aria-labelledby="post-details-heading" class="post-details">
+  <h2 id="post-details-heading" class="u-vis-hidden">Details about this lit tape</h2>
+  <div class="post-details__subsection post-details__subsection--cover">
+    <img src="{{ site.imagesContent }}/{{ bookCover }}" alt="Cover of the book {{ title }}">
+  </div>
+  <div class="post-details__subsection">
+    <h3>Book details</h3>
+    <ul>
+      <li>Genres: {{ bookGenres }}</li>
+      <li>{{ bookPages }} pages</li>
+      <li>
+        <a href="{{ bookLink }}">View description on Bookshop</a>
+      </li>
+    </ul>
+    <h3>Playlist details</h3>
+    <ul>
+      <li>{{ playlistTracks }} tracks</li>
+      <li>Runtime: {{ playlistRuntime }}</li>
+      <li>
+        <a href="{{ playlistLink }}">Listen to playlist on Tidal</a>
+      </li>
+    </ul>
+  </div>
+  <div class="post-details__subsection">
 
 {{ content | safe }}
 

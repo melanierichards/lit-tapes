@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
     // NAVIGATION
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  // BLOG
+  // POSTS
 
     // RSS FEED
     eleventyConfig.addPlugin(pluginRss);
@@ -55,42 +55,24 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(value, {zone: 'utc'}).toISO();
       });
 
-    /* EXTRA MD OPTIONS
-     * Classes etc: https://www.npmjs.com/package/markdown-it-attrs
-     * Header anchors: https://www.npmjs.com/package/markdown-it-anchor
-     */
+    // SHORTCODE - SECTION START
+    eleventyConfig.addShortcode("sectionStart", function(slug, headingText) {
+      return `<section class="post-section" aria-labelledby="{slug}-heading"><h2 id="${slug}-heading">${headingText}</h2>`;
+    });
 
-    /*
-    const markdownIt = require('markdown-it');
-    const markdownItAnchor = require('markdown-it-anchor');
-    const markdownItAttrs = require("markdown-it-attrs");
-    let markdownLibrary = markdownIt({
-      html: true,
-      breaks: true,
-      linkify: true
-    }).use(markdownItAttrs).use(markdownItAnchor, {permalink: false});
-
-    eleventyConfig.setLibrary('md', markdownLibrary);
-    */
-
-    // SHORTCODE - RESPONSIVE IMAGES
-    /*
-    eleventyConfig.addShortcode("responsiveImage", function(baseSrc, ext, max, alt, classes, link) {
-      let fullBaseSrc = '/assets/images/content/' + baseSrc;
-      var sources = '<source media="(min-width: 501px)" srcset="' + fullBaseSrc + '-m.' + ext + '">';
-      if (max !== 'm') {
-        sources = '<source media="(min-width: 801px)" srcset="' + fullBaseSrc + '-l.' + ext + '">' + sources;
-      }
-      if (max === 'xl') {
-        sources = '<source media="(min-width: 1201px)" srcset="' + fullBaseSrc + '-xl.' + ext + '">' + sources;
-      }
-      if (link) {
-        return `<div class="c-media ${classes}"><a href="${link}"><picture>${sources}<img src="${fullBaseSrc}-s.${ext}" alt="${alt}"></picture></a></div>`;
+    // SHORTCODE - SECTION END
+    eleventyConfig.addShortcode("sectionEnd", function(specialSection) {
+      if (specialSection & specialSection === 'postDetails') {
+        return '</div></section>';
       } else {
-        return `<div class="c-media ${classes}"><picture>${sources}<img src="${fullBaseSrc}-s.${ext}" alt="${alt}"></picture></div>`;
+        return '</section>';
       }
     });
-    */
+
+    // SHORTCODE - TIDAL PLAYER
+    eleventyConfig.addShortcode("tidalPlayer", function(playlistId) {
+      return `<div style="position: relative; padding-bottom: 75vh; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/playlists/${playlistId}" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>`;
+    });
   
   // CUSTOMIZE INPUT DIRECTORY
   return {

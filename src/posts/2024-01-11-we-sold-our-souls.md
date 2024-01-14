@@ -23,11 +23,13 @@ tags: ["posts"]
 
 “We Sold Our Souls” follows the ex-guitarist for a metal band whose life—unbeknownst to her—was wrecked by an ill-advised deal. This book is an ode to metal, with a Dolly Parton singalong as intermission.
 
-## Playlist
+{% sectionEnd "postDetails" %}
 
-<div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/playlists/94392fb6-195b-4802-8e8c-8b3272b0ce0d" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>
+{% sectionStart "playlist", "Playlist" %}
+{% tidalPlayer "94392fb6-195b-4802-8e8c-8b3272b0ce0d" %}
+{% sectionEnd %}
 
-## Albums Mentioned
+{% sectionStart "albums", "Albums Mentioned" %}
 
 | Album | Artist |
 | :---- | :----- |
@@ -41,7 +43,9 @@ tags: ["posts"]
 | Somewhere in Time | Iron Maiden |
 | Reign in Blood | Slayer |
 
-## Artists Otherwise Mentioned
+{% sectionEnd %}
+
+{% sectionStart "artists", "Artists Otherwise Mentioned" %}
 
 * Abbath 
 * Amon Amarth
@@ -85,3 +89,5 @@ tags: ["posts"]
 * Wagner
 * Wolves in the Throne Room
 * Woods of Ypres
+
+{% sectionEnd %}

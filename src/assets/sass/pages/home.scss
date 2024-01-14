@@ -5,8 +5,6 @@
  */
 
 .tagline {
-  font-size: 1.5rem;
-  line-height: 1.1;
   padding: var(--space-primary);
 }
 
@@ -24,10 +22,6 @@
  */
 
 @media (min-width: $bp-m) {
-  .tagline {
-    font-size: 2.5rem;
-  }
-
   .cass-grid {
     grid-template-columns: repeat(auto-fit, minmax(calc(200px + 6rem), 1fr));
   }
