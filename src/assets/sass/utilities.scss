@@ -39,3 +39,8 @@
   letter-spacing: .01em;
   text-transform: uppercase;
 }
+
+@mixin all-caps {
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}

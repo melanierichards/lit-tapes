@@ -52,8 +52,9 @@ $bp-xl: 80rem;
  */
 
 :root {
-  --font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-heading: "League Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-tagline: "Bagnard", "Goudy Bookletter 1911", "Goudy Old Style", Garamond, "Georgia", serif;
 }
 
 /*
@@ -62,7 +63,7 @@ $bp-xl: 80rem;
  *  ---------------------------------------------
  */
 
- :root {
+:root {
   --selection-bg: #1b1b1b;
   --selection-text: #fefefe;
   --skip-link-bg: #1b1b1b;

@@ -10,6 +10,11 @@
   justify-content: space-between;
 }
 
+.site-header__title {
+  display: inline-block;
+  line-height: 1;
+}
+
 .site-header__title:link,
 .site-header__title:visited {
   border-bottom: 2px solid transparent;

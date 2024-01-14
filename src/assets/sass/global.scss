@@ -19,6 +19,7 @@
 html {
   padding: var(--space-primary);
   font-family: var(--font-body);
+  letter-spacing: -.01em;
 }
 
 body {
@@ -49,16 +50,15 @@ body {
  */
 
 h1, .h1 {
-  font-size: 1.5rem;
-  line-height: 1.1;
+  font: 400 1.5rem/1.1 var(--font-tagline);
   margin: 0;
 }
 
 h2, .h2,
 h3, .h3 {
   display: block;
-  font-size: 1.5rem;
-  letter-spacing: .01em;
+  font: 1.5rem/1.1 var(--font-heading);
+  letter-spacing: .04em;
   text-transform: uppercase;
 }
 
@@ -72,6 +72,12 @@ h1:first-child,
 h2:first-child,
 h3:first-child {
   margin-top: 0;
+}
+
+@media (min-width: $bp-s) {
+  h1, .h1 {
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: $bp-m) {

@@ -15,7 +15,7 @@
     {% if prevItemIndex >= 0 %}
       {% set prev = collections.posts[prevItemIndex] %}
       <a class="c-pagination__older" href="{{ prev.url }}">
-        <span class="c-pagination__arrow">⇇</span>
+        <span class="c-pagination__arrow">⇐</span>
         <span class="c-pagination__label">{{ prev.data.title }}</span>
       </a>
     {% endif %}
@@ -23,7 +23,7 @@
       {% set next = collections.posts[nextItemIndex] %}
       <a class="c-pagination__newer" href="{{ next.url }}">
         <span class="c-pagination__label">{{ next.data.title }}</span>
-        <span class="c-pagination__arrow">⇉</span>
+        <span class="c-pagination__arrow">⇒</span>
       </a>
     {% endif %}
   </div>

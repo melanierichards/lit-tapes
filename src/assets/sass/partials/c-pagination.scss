@@ -10,8 +10,10 @@
  
 a.c-pagination__older,
 a.c-pagination__newer {
+  @include all-caps;
   border-bottom: 0;
   display: block;
+  font: 700 1.25rem/1 var(--font-heading);
   position: relative;
   text-decoration: none;
 
