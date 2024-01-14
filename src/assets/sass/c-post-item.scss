@@ -1,0 +1,56 @@
+/*
+ *  =============================================
+ *  COMPONENT: POST ITEM
+ *  =============================================
+ */
+
+.c-post-item {
+  align-self: center;
+  padding: var(--space-m);
+  position: relative;
+  text-align: center;
+}
+
+.c-post-item__cass {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  transition: transform 200ms ease-in-out;
+}
+
+.c-post-item:has(a:hover) .c-post-item__cass {
+  transform: translateY(-.66rem) scale(1.1);
+}
+
+.c-post-item__link {
+  display: block;
+  margin-top: var(--space-s);
+}
+
+.empty-tile {
+  border: 1px dashed currentColor;
+  border-radius: 8px;
+  padding: var(--space-m);
+}
+
+/* Make entire post item a hit target for link */
+.c-post-item__link::after {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/*
+ *  ---------------------------------------------
+ *  BREAKPOINTS
+ *  ---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+  .c-post-item {
+    padding: var(--space-l);
+  }
+}

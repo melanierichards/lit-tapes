@@ -1,0 +1,35 @@
+/*
+ *  =============================================
+ *  PAGE: HOME
+ *  =============================================
+ */
+
+.tagline {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  padding: var(--space-m);
+}
+
+.cass-grid {
+  border-top: 1px solid currentColor;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(calc(200px + 4rem), 1fr));
+}
+
+/*
+ *  ---------------------------------------------
+ *  BREAKPOINTS
+ *  ---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+  .tagline {
+    font-size: 2.5rem;
+    padding: var(--space-l);
+  }
+
+  .cass-grid {
+    grid-template-columns: repeat(auto-fit, minmax(calc(200px + 6rem), 1fr));
+  }
+}

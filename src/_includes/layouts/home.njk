@@ -2,11 +2,17 @@
 layout: layouts/global.njk
 ---
 
-<h1>{{ title }}</h1>
-{{ content | safe }}
-
-<ul class="u-simple-list | c-post-list">
+<h1 class="u-vis-hidden">Lit Tapes</h1>
+<div class="tagline">{{ content | safe }}</div>
+<h2 id="books-heading" class="u-vis-hidden">Books with Playlists</h2>
+<ul aria-labelledby="books-heading" class="u-simple-list | cass-grid">
   {% for item in collections.posts | reverse %}
     {% include "partials/c-post-item.njk" %}
   {% endfor %}
+  <li class="c-post-item">
+    <div class="empty-tile">
+      <h3>Next up 📖</h3>
+      <p>A re-read of “The Perks of Being a Wallflower” — Stephen Chbosky</p>
+    </div>
+  </li>
 </ul>
