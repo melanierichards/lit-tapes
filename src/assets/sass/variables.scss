@@ -79,12 +79,15 @@ $bp-xl: 80rem;
 
   --canvas-bg: #1b1b1b;
   --canvas-text: #dedede;
-  --selection-text: #000;
   --subtle-text: #a2a2a2;
 }
 
+[data-prefers-theme="dark"] {
+  @include darkScheme;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-prefers-theme="light"]) {
     @include darkScheme;
   }
 }
