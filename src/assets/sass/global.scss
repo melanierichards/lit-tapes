@@ -17,6 +17,8 @@
 }
 
 html {
+  background-color: var(--canvas-bg);
+  color: var(--canvas-text);
   padding: var(--space-primary);
   font-family: var(--font-body);
   letter-spacing: -.01em;
@@ -91,6 +93,16 @@ h3:first-child {
  *  TEXT
  *  ---------------------------------------------
  */
+
+a:link, a:visited {
+  color: currentColor;
+}
+
+a:hover {
+  text-decoration-color: var(--link-hover-border);
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
 
 p, ol, ul {
   margin: var(--space-s) 0 0;
