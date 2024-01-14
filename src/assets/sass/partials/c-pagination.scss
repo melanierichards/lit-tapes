@@ -1,0 +1,61 @@
+/*
+ *  =============================================
+ *  COMPONENT: PAGINATION
+ *  =============================================
+ */
+
+.c-pagination__links {
+  position: relative;
+}
+ 
+a.c-pagination__older,
+a.c-pagination__newer {
+  border-bottom: 0;
+  display: block;
+  position: relative;
+  text-decoration: none;
+
+  .c-pagination__label {
+    border-bottom: 1px solid transparent;
+  }
+
+  &:hover {
+    .c-pagination__label {
+      border-bottom-color: currentColor;
+    }
+  }
+}
+
+.c-pagination__arrow {
+  display: inline-block;
+  transition: transform 200ms ease-in-out;
+}
+
+.c-pagination__older:hover {
+  .c-pagination__arrow {
+    transform: translateX(-.25em);
+  }
+}
+
+.c-pagination__newer:hover {
+  .c-pagination__arrow {
+    transform: translateX(.25em);
+  }
+}
+
+@media (min-width: 32em) {
+  .c-pagination__links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .c-pagination__links--has-next {
+    justify-content: space-between;
+  }
+
+  a.c-pagination__older,
+  a.c-pagination__newer {
+    max-width: 50%;
+}
+}

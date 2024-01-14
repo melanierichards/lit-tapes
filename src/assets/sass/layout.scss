@@ -10,7 +10,7 @@ main {
   margin-top: var(--space-primary);
 }
 
-section {
+section, .l-section {
   padding: var(--space-primary);
 
   &:not(:first-child) {
