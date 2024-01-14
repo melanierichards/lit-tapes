@@ -2,13 +2,16 @@
 title: All My Rage
 date: 2024-01-11
 author: Sabaa Tahir
+
 bookCover: all-my-rage.webp
 bookGenres: Fiction, contemporary, YA
 bookPages: 400
 bookLink: https://bookshop.org/a/15644/9780593202364
+
 playlistTracks: 46
 playlistRuntime: 03:44:55
 playlistLink: https://tidal.com/browse/playlist/360e99da-44d3-4dd0-86c4-c762be22c3da
+
 cassDeco: stripes
 cassColorDesc: beige, violet, and red
 cassColorScheme: light
@@ -18,6 +21,23 @@ cassthingyColor: "#FBF2E0"
 cassStripe1: "#FA1714"
 cassStripe2: "#BB147C"
 cassStripe3: "#850AB5"
+
+accentLight: "#FA1714"
+borderLight: "#BB147C"
+canvasBgLight: "#F9EED6"
+canvasTextLight: "#300442"
+headingLight: "#6b0891"
+selectionBgLight: "rgba(255,255,255,.9)"
+selectionTextLight: "#000"
+
+accentDark: "#fb5c5a"
+borderDark: "#BB147C"
+canvasBgDark: "#120D03"
+canvasTextDark: "#eee7f1"
+headingDark: "#d69eec"
+selectionBgDark: "rgba(255,255,255,.9)"
+selectionTextDark: "#000"
+
 tags: ["posts"]
 ---
 

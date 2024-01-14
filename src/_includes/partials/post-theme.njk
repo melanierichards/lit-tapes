@@ -1,0 +1,68 @@
+<style>
+  :root {
+    --canvas-bg: {{ canvasBgLight }};
+    --canvas-text: {{ canvasTextLight }};
+    --link-hover-border: {{ accentLight }};
+    --selection-bg: {{ selectionBgLight }};
+    --selection-text: {{ selectionTextLight }};
+  }
+
+  h1, h2, h3,
+  .site-header__title:link, .site-header__title:visited {
+    color: {{ headingLight }};
+  }
+
+  main, section,
+  .post-details__subsection,
+  .c-pagination {
+    border-color: {{ borderLight }} !important;
+  }
+
+  [data-prefers-theme="dark"] {
+    --canvas-bg: {{ canvasBgDark }};
+    --canvas-text: {{ canvasTextDark }};
+    --link-hover-border: {{ accentDark }};
+    --selection-bg: {{ selectionBgDark }};
+    --selection-text: {{ selectionTextDark }};
+  }
+
+  [data-prefers-theme="dark"] h1, 
+  [data-prefers-theme="dark"] h2, 
+  [data-prefers-theme="dark"] h3,
+  [data-prefers-theme="dark"] .site-header__title:link, 
+  [data-prefers-theme="dark"] .site-header__title:visited {
+    color: {{ headingDark }};
+  }
+
+  [data-prefers-theme="dark"] main, 
+  [data-prefers-theme="dark"] section,
+  [data-prefers-theme="dark"] .post-details__subsection,
+  [data-prefers-theme="dark"] .c-pagination {
+    border-color: {{ borderDark }} !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-prefers-theme="light"]) {
+      --canvas-bg: {{ canvasBgDark }};
+      --canvas-text: {{ canvasTextDark }};
+      --link-hover-border: {{ accentDark }};
+      --selection-bg: {{ selectionBgDark }};
+      --selection-text: {{ selectionTextDark }};
+    }
+
+    :root:not([data-prefers-theme="light"]) h1,
+    :root:not([data-prefers-theme="light"]) h2,
+    :root:not([data-prefers-theme="light"]) h3,
+    :root:not([data-prefers-theme="light"]) .site-header__title:link, 
+    :root:not([data-prefers-theme="light"]) .site-header__title:visited {
+      color: {{ headingDark }};
+    }
+
+    :root:not([data-prefers-theme="light"]) main,
+    :root:not([data-prefers-theme="light"]) section,
+    :root:not([data-prefers-theme="light"]) .post-details__subsection,
+    :root:not([data-prefers-theme="light"]) .c-pagination {
+      border-color: {{ borderDark }} !important;
+    }
+  }
+</style>

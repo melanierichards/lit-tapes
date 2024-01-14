@@ -38,13 +38,16 @@ Playlists made from songs mentioned in books
 title: 
 date: 2024-
 author: 
+
 bookCover: title.webp
 bookGenres: 
 bookPages: 
 bookLink: 
+
 playlistTracks: 
 playlistRuntime: 00:00:00
 playlistLink: 
+
 cassDeco: bandTop, bandBottom, stripes, or none
 cassColorDesc: {list of colors for cassette tape alt text}
 cassColorScheme: light or dark
@@ -55,6 +58,21 @@ cassBandColor: "" {required if using this style}
 cassStripe1: "" {required if using this style}
 cassStripe2: "" {required if using this style}
 cassStripe3: "" {required if using this style}
+
+accentLight: "#"
+borderLight: "#"
+canvasBgLight: "#"
+canvasTextLight: "#"
+headingLight: "#"
+selectionBgLight: "#"
+
+accentDark: "#"
+borderDark: "#"
+canvasBgDark: "#"
+canvasTextDark: "#"
+headingDark: "#"
+selectionBgDark: "#"
+
 tags: ["posts"]
 ---
 
