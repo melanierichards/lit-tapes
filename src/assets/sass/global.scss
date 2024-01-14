@@ -42,6 +42,18 @@ body {
   color: var(--selection-text);
 }
 
+@media (min-width: $bp-m) {
+  body {
+    padding: var(--space-m);
+  }
+}
+
+@media (min-width: $bp-l) {
+  body {
+    padding: var(--space-l);
+  }
+}
+
 /*
  *  ---------------------------------------------
  *  HEADINGS
