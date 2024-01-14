@@ -1,0 +1,44 @@
+/*
+ *  =============================================
+ *  SITE HEADER
+ *  =============================================
+ */
+
+.site-header__nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header__title:link,
+.site-header__title:visited {
+  border-bottom: 2px solid transparent;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: border-bottom-color 200ms ease-in-out;
+}
+
+.site-header__title:hover {
+  border-bottom-color: currentColor;
+}
+
+.site-header__author {
+  font-size: .9rem;
+  margin-top: var(--space-xxxs);
+}
+
+.site-header__nav-list {
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.site-header__later {
+  color: var(--subtle-text);
+  font-style: italic;
+}
+
+@media (min-width: $bp-m) {
+  .site-header__title {
+    font-size: 2.25rem;
+  }
+}

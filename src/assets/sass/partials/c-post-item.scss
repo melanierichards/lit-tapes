@@ -6,7 +6,7 @@
 
 .c-post-item {
   align-self: center;
-  padding: var(--space-m);
+  padding: var(--space-primary);
   position: relative;
   text-align: center;
 }
@@ -48,9 +48,3 @@
  *  BREAKPOINTS
  *  ---------------------------------------------
  */
-
-@media (min-width: $bp-m) {
-  .c-post-item {
-    padding: var(--space-l);
-  }
-}

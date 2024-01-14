@@ -17,7 +17,7 @@
 }
 
 html {
-  padding: var(--space-s);
+  padding: var(--space-primary);
   font-family: var(--font-body);
 }
 
@@ -40,18 +40,6 @@ body {
 ::-moz-selection {
   background: var(--selection-bg);
   color: var(--selection-text);
-}
-
-@media (min-width: $bp-m) {
-  body {
-    padding: var(--space-m);
-  }
-}
-
-@media (min-width: $bp-l) {
-  body {
-    padding: var(--space-l);
-  }
 }
 
 /*

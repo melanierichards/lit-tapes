@@ -7,7 +7,7 @@
 .tagline {
   font-size: 1.5rem;
   line-height: 1.1;
-  padding: var(--space-m);
+  padding: var(--space-primary);
 }
 
 .cass-grid {
@@ -26,7 +26,6 @@
 @media (min-width: $bp-m) {
   .tagline {
     font-size: 2.5rem;
-    padding: var(--space-l);
   }
 
   .cass-grid {

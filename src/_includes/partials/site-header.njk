@@ -1,8 +1,18 @@
 <header class="site-header">
   <div class="l-contain">
     <nav class="site-header__nav" aria-label="Site navigation">
-      <a href="/" class="site-header__title">{{ site.title }}</a>
-      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+      <div class="site-header__title-area">
+        <a href="/" class="u-all-caps | site-header__title">{{ site.title }}</a>
+        <p class="site-header__author">Made by <a href="{{ site.authorUrl }}">Melanie</a></p>
+      </div>
+      <ul class="u-simple-list | site-header__nav-list">
+        <li>
+          <a href="{{ site.url}}/feed.xml">Subscribe to RSS</a>
+        </li>
+        <li>
+          <span>Stats <span class="site-header__later">(coming later!)</span></span>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>

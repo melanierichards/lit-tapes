@@ -10,6 +10,7 @@
  *  ---------------------------------------------
  */
 
+$bp-s: 36rem;
 $bp-m: 48rem;
 $bp-l: 64rem;
 $bp-xl: 80rem;
@@ -21,6 +22,7 @@ $bp-xl: 80rem;
  */
 
 :root {
+  --space-primary: 1rem;
   --space-xxxs: .25rem;
   --space-xxs: .5rem;
   --space-xs: .75rem;
@@ -29,6 +31,18 @@ $bp-xl: 80rem;
   --space-l: 3rem;
   --space-xl: 6rem;
   --space-xxl: 8rem;
+}
+
+@media (min-width: $bp-s) {
+  :root {
+    --space-primary: 2rem;
+  }
+}
+
+@media (min-width: $bp-s) {
+  :root {
+    --space-primary: 3rem;
+  }
 }
 
 /*
@@ -53,4 +67,5 @@ $bp-xl: 80rem;
   --selection-text: #fefefe;
   --skip-link-bg: #1b1b1b;
   --skip-link-text: #fefefe;
+  --subtle-text: #666;
 }
