@@ -27,9 +27,19 @@ body {
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+:focus {
+  outline-offset: 2px;
+  outline: 2px solid currentColor;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+::-moz-selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 /*
@@ -53,6 +63,17 @@ h3:first-child {
 p, ol, ul {
   margin-bottom: 0;
   margin-top: var(--space-s);
+}
+
+/*
+ *  ---------------------------------------------
+ *  MEDIA
+ *  ---------------------------------------------
+ */
+
+ img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*

@@ -3,6 +3,9 @@
   "url": "https://littapes.melanie-richards.com",
   "title": "Lit Tapes",
   "description": "Playlists made from songs mentioned in books",
+  "author": "Melanie Richards",
+  "authorUrl": "https://melanie-richards.com",
+  "repoUrl": "https://github.com/melanierichards/lit-tapes",
   "images": "/assets/images",
   "imagesContent": "/assets/images/content",
   "videosContent": "/assets/videos/content"

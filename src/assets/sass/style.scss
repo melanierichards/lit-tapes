@@ -3,6 +3,7 @@
 @import 'utilities';
 @import 'layout';
 
-@import 'page-home';
+@import 'partials/footer';
+@import 'partials/c-post-item';
 
-@import 'c-post-item';
+@import 'pages/home';
