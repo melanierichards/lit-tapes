@@ -3,36 +3,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if title %}{{ title | escape }} - {% endif %}{{ site.title }}</title>
+  <meta property="og:title" content="{% if title %}{{ title | escape }} - {% endif %}{{ site.title }}">
+
   {% if description %}
     <meta name="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
   {% else %}
     <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}">
   {% endif %}
+
   <meta name="robots" content="index, follow">
 
   <!-- SOCIAL MEDIA -->
-  {% if title %}
-    <meta property="og:title" content="{{ title }}">
-  {% else %}
-    <meta property="og:title" content="{{ site.title }}">
-  {% endif %}
-
-  {% if description %}
-    <meta property="og:description" content="{{ description }}">
-  {% endif %}
-
-  {% if featureSrc and featureExt %}
-    <meta property="og:image" content="{{ site.url }}{{ site.images }}/content/{{ featureSrc}}-m.{{ featureExt }}">
-    <meta name="twitter:card" content="summary_large_image">
-    {% if featureAlt %}
-      <meta name="twitter:image:alt" content="{{ featureAlt }}">
-    {% endif %}
-  {% else %}
-    <meta name="og:image" content="{{ site.url }}/assets/images/icon-192.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:image:src" content="{{ site.url }}/assets/images/icon-192.png">
-    <meta name="twitter:image:alt" content="">
-  {% endif %}
+  <meta name="og:image" content="{{ site.url }}/assets/images/icon-192.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/images/icon-192.png">
+  <meta name="twitter:image:alt" content="An illustration of a cassette tape">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url}}/feed.xml">
   <link rel="canonical" href="{{ site.url }}{{ url }}">

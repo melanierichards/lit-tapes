@@ -2,11 +2,6 @@
 
 Playlists made from songs mentioned in books
 
-## Setup from Template Checklist
-
-* [ ] Update `head.njk` with any info for: RSS, social metadata, icons
-* [ ] Update images referenced in `manifest.webmanifest`
-
 -------------------------------------------------------------
 
 ## To build
