@@ -1,0 +1,41 @@
+{
+  "author": "Grady Hendrix",
+  "bookDetails": {
+    "cover": "we-sold-our-souls.png",
+    "genres": ["fiction", "horror"],
+    "pages": "336",
+    "bookshopId": "9781683693406"
+  },
+  "playlistDetails": {
+    "tracks": "38",
+    "runtime": "02:48:28",
+    "tidalId": "94392fb6-195b-4802-8e8c-8b3272b0ce0d"
+  },
+  "cassette": {
+    "deco": "bandTop",
+    "colorDesc": "black and red-violet",
+    "colorScheme": "dark",
+    "color": "#000",
+    "thingyColor": "#3b3b3b",
+    "labelColor": "#444",
+    "bandColor": "#BB0092"
+  },
+  "lightTheme": {
+    "accent": "#ae8000",
+    "border": "#966f00",
+    "canvasBg": "#f2f2f2",
+    "canvasText": "#1b1b1b",
+    "heading": "#A00053",
+    "selectionBg": "#966f00",
+    "selectionText": "#fff"
+  },
+  "darkTheme": {
+    "accent": "#ec80d5",
+    "border": "#BB0092",
+    "canvasBg": "#1b1b1b",
+    "canvasText": "#dedede",
+    "heading": "#E8AB00",
+    "selectionBg": "#E8AB00",
+    "selectionText": "#000"
+  }
+}

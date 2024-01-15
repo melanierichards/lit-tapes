@@ -37,42 +37,7 @@ Playlists made from songs mentioned in books
 ---
 title: 
 date: 2024-
-author: 
-
-bookCover: title.webp
-bookGenres: 
-bookPages: 
-bookLink: 
-
-playlistTracks: 
-playlistRuntime: 00:00:00
-playlistLink: 
-
-cassDeco: bandTop, bandBottom, stripes, or none
-cassColorDesc: {list of colors for cassette tape alt text}
-cassColorScheme: light or dark
-cassColor: ""
-cassthingyColor: "" {the trapezoid at the bottom}
-cassLabelColor: ""
-cassBandColor: "" {required if using this style}
-cassStripe1: "" {required if using this style}
-cassStripe2: "" {required if using this style}
-cassStripe3: "" {required if using this style}
-
-accentLight: "#"
-borderLight: "#"
-canvasBgLight: "#"
-canvasTextLight: "#"
-headingLight: "#"
-selectionBgLight: "#"
-
-accentDark: "#"
-borderDark: "#"
-canvasBgDark: "#"
-canvasTextDark: "#"
-headingDark: "#"
-selectionBgDark: "#"
-
+slug: matches-json-file-name
 tags: ["posts"]
 ---
 
@@ -89,8 +54,11 @@ tags: ["posts"]
 
 {% sectionStart "artists", "Artists Otherwise Mentioned" %}
 {% sectionEnd %}
-
 ```
+
+## Data Template
+
+Duplicate `src/_data/tapes/_template.json` and use the same file name as referenced in `slug`.
 
 ### About shortcodes
 

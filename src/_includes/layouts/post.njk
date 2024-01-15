@@ -3,33 +3,37 @@ layout: layouts/global.njk
 slug: post
 ---
 
+{% set tape = tapes[slug] %}
+{% set bookDetails = tape.bookDetails %}
+{% set playlistDetails = tape.playlistDetails %}
+
 <section>
   <h1>
     <span class="h2">Book</span>
-    {{ title }} — {{ author }}
+    {{ title }} — {{ tape.author }}
   </h1>
 </section>
 
 <section aria-labelledby="post-details-heading" class="post-details">
   <h2 id="post-details-heading" class="u-vis-hidden">Details about this lit tape</h2>
   <div class="post-details__subsection post-details__subsection--cover">
-    <img src="{{ site.imagesContent }}/{{ bookCover }}" alt="Cover of the book {{ title }}">
+    <img src="{{ site.imagesContent }}/{{ bookDetails.cover }}" alt="Cover of the book {{ title }}">
   </div>
   <div class="post-details__subsection">
     <h3>Book details</h3>
     <ul>
-      <li>Genres: {{ bookGenres }}</li>
-      <li>{{ bookPages }} pages</li>
+      <li>Genres: {% set comma = joiner() %} {% for genre in bookDetails.genres -%}{{ comma() }} {{ genre }}{%- endfor %}</li>
+      <li>{{ bookDetails.pages }} pages</li>
       <li>
-        <a href="{{ bookLink }}">View description on Bookshop</a>
+        <a href="https://bookshop.org/a/15644/{{ bookDetails.bookshopId }}">View description on Bookshop</a>
       </li>
     </ul>
     <h3>Playlist details</h3>
     <ul>
-      <li>{{ playlistTracks }} tracks</li>
-      <li>Runtime: {{ playlistRuntime }}</li>
+      <li>{{ playlistDetails.tracks }} tracks</li>
+      <li>Runtime: {{ playlistDetails.runtime }}</li>
       <li>
-        <a href="{{ playlistLink }}">Listen to playlist on Tidal</a>
+        <a href="https://tidal.com/browse/playlist/{{ playlistDetails.tidalId }}">Listen to playlist on Tidal</a>
       </li>
     </ul>
   </div>

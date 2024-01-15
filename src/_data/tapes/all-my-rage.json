@@ -1,0 +1,43 @@
+{
+  "author": "Sabaa Tahir",
+  "bookDetails": {
+    "cover": "all-my-rage.webp",
+    "genres": ["fiction", "contemporary", "YA"],
+    "pages": "400",
+    "bookshopId": "9780593202364"
+  },
+  "playlistDetails": {
+    "tracks": "46",
+    "runtime": "03:44:55",
+    "tidalId": "360e99da-44d3-4dd0-86c4-c762be22c3da"
+  },
+  "cassette": {
+    "deco": "stripes",
+    "colorDesc": "beige, violet, and red",
+    "colorScheme": "light",
+    "color": "#F7E8C7",
+    "thingyColor": "#FBF2E0",
+    "labelColor": "#FDFAF2",
+    "stripe1": "#FA1714",
+    "stripe2": "#BB147C",
+    "stripe3": "#850AB5"
+  },
+  "lightTheme": {
+    "accent": "#FA1714",
+    "border": "#BB147C",
+    "canvasBg": "#F9EED6",
+    "canvasText": "#300442",
+    "heading": "#6b0891",
+    "selectionBg": "rgba(255,255,255,.9)",
+    "selectionText": "#000"
+  },
+  "darkTheme": {
+    "accent": "#fb5c5a",
+    "border": "#BB147C",
+    "canvasBg": "#120D03",
+    "canvasText": "#eee7f1",
+    "heading": "#d69eec",
+    "selectionBg": "rgba(255,255,255,.9)",
+    "selectionText": "#000"
+  }
+}

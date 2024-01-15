@@ -1,29 +1,31 @@
+{% set light = tape.lightTheme %}
+{% set dark = tape.darkTheme %}
 <style>
   :root {
-    --canvas-bg: {{ canvasBgLight }};
-    --canvas-text: {{ canvasTextLight }};
-    --link-hover-border: {{ accentLight }};
-    --selection-bg: {{ selectionBgLight }};
-    --selection-text: {{ selectionTextLight }};
+    --canvas-bg: {{ light.canvasBg }};
+    --canvas-text: {{ light.canvasText }};
+    --link-hover-border: {{ light.accent }};
+    --selection-bg: {{ light.selectionBg }};
+    --selection-text: {{ light.selectionText }};
   }
 
   h1, h2, h3,
   .site-header__title:link, .site-header__title:visited {
-    color: {{ headingLight }};
+    color: {{ light.heading }};
   }
 
   main, section,
   .post-details__subsection,
   .c-pagination {
-    border-color: {{ borderLight }} !important;
+    border-color: {{ light.border }} !important;
   }
 
   [data-prefers-theme="dark"] {
-    --canvas-bg: {{ canvasBgDark }};
-    --canvas-text: {{ canvasTextDark }};
-    --link-hover-border: {{ accentDark }};
-    --selection-bg: {{ selectionBgDark }};
-    --selection-text: {{ selectionTextDark }};
+    --canvas-bg: {{ dark.canvasBg }};
+    --canvas-text: {{ dark.canvasText }};
+    --link-hover-border: {{ dark.accent }};
+    --selection-bg: {{ dark.selectionBg }};
+    --selection-text: {{ dark.selectionText }};
   }
 
   [data-prefers-theme="dark"] h1, 
@@ -31,23 +33,23 @@
   [data-prefers-theme="dark"] h3,
   [data-prefers-theme="dark"] .site-header__title:link, 
   [data-prefers-theme="dark"] .site-header__title:visited {
-    color: {{ headingDark }};
+    color: {{ dark.heading }};
   }
 
   [data-prefers-theme="dark"] main, 
   [data-prefers-theme="dark"] section,
   [data-prefers-theme="dark"] .post-details__subsection,
   [data-prefers-theme="dark"] .c-pagination {
-    border-color: {{ borderDark }} !important;
+    border-color: {{ dark.border }} !important;
   }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-prefers-theme="light"]) {
-      --canvas-bg: {{ canvasBgDark }};
-      --canvas-text: {{ canvasTextDark }};
-      --link-hover-border: {{ accentDark }};
-      --selection-bg: {{ selectionBgDark }};
-      --selection-text: {{ selectionTextDark }};
+      --canvas-bg: {{ dark.canvasBg }};
+      --canvas-text: {{ dark.canvasText }};
+      --link-hover-border: {{ dark.accent }};
+      --selection-bg: {{ dark.selectionBg }};
+      --selection-text: {{ dark.selectionText }};
     }
 
     :root:not([data-prefers-theme="light"]) h1,
@@ -55,14 +57,14 @@
     :root:not([data-prefers-theme="light"]) h3,
     :root:not([data-prefers-theme="light"]) .site-header__title:link, 
     :root:not([data-prefers-theme="light"]) .site-header__title:visited {
-      color: {{ headingDark }};
+      color: {{ dark.heading }};
     }
 
     :root:not([data-prefers-theme="light"]) main,
     :root:not([data-prefers-theme="light"]) section,
     :root:not([data-prefers-theme="light"]) .post-details__subsection,
     :root:not([data-prefers-theme="light"]) .c-pagination {
-      border-color: {{ borderDark }} !important;
+      border-color: {{ dark.border }} !important;
     }
   }
 </style>

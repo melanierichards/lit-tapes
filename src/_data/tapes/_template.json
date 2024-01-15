@@ -1,0 +1,44 @@
+{
+  "author": "",
+  "bookDetails": {
+    "cover": ".webp",
+    "genres": ["fiction"],
+    "pages": "",
+    "bookshopId": ""
+  },
+  "playlistDetails": {
+    "tracks": "",
+    "runtime": "00:00:00",
+    "tidalId": ""
+  },
+  "cassette": {
+    "deco": "bandTop, bandBottom, stripes, or none",
+    "colorDesc": "list of colors for cassette tape alt text",
+    "colorScheme": "light or dark",
+    "color": "#",
+    "thingyColor": "# {the trapezoid at the bottom}",
+    "labelColor": "#",
+    "bandColor": "#",
+    "stripe1": "#",
+    "stripe2": "#",
+    "stripe3": "#"
+  },
+  "lightTheme": {
+    "accent": "#48DAED",
+    "border": "currentColor",
+    "canvasBg": "#fefefe",
+    "canvasText": "#333",
+    "heading": "#333",
+    "selectionBg": "#48DAED",
+    "selectionText": "#000"
+  },
+  "darkTheme": {
+    "accent": "#48DAED",
+    "border": "currentColor",
+    "canvasBg": "#1b1b1b",
+    "canvasText": "#dedede",
+    "heading": "#dedede",
+    "selectionBg": "#48DAED",
+    "selectionText": "#000"
+  }
+}
