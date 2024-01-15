@@ -10,8 +10,13 @@
 }
 
 .site-footer__desc {
+  color: var(--subtle-text);
   max-width: 40rem;
-  text-wrap: balance;
+  text-wrap: balance;    
+}
+
+.theme-switcher legend {
+  color: var(--subtle-text);
 }
 
 /*
