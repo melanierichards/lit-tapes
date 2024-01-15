@@ -30,7 +30,9 @@
 }
 
 .c-post-item__link {
+  @include all-caps();
   display: block;
+  font: 1.25rem/1.1 var(--font-heading);
   margin-top: var(--space-s);
 }
 
