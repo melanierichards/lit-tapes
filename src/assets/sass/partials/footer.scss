@@ -9,9 +9,7 @@
   text-align: center;
 }
 
-.site-footer p {
-  margin-left: auto;
-  margin-right: auto;
+.site-footer__desc {
   max-width: 40rem;
   text-wrap: balance;
 }
@@ -24,14 +22,18 @@
 
 .theme-switcher {
   @include all-caps();
+  align-items: center;
   border: 0;
+  display: flex;
   font-size: .825rem;
+  justify-content: center;
   margin-top: var(--space-m);
   text-align: center;
-  width: 100%;
+  width: auto;
 
   legend {
     font-weight: 700;
+    text-align: center;
   }
 
   input {
@@ -71,14 +73,31 @@
   }
 }
 
-/* Working around fieldset + Flexbox limitations with an extra wrapper */
-.theme-switcher__layout {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 .theme-switcher__options {
   display: flex;
   justify-content: center;
+  margin-top: var(--space-s);
+}
+
+/*
+ *  ---------------------------------------------
+ *  BREAKPOINTS
+ *  ---------------------------------------------
+ */
+
+@media (min-width: $bp-m) {
+  .site-footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .site-footer__desc {
+    flex: 1;
+    margin-right: var(--space-s);
+  }
+
+  .theme-switcher {
+    margin-top: 0;
+  }
 }
