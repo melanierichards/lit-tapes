@@ -6,6 +6,10 @@
 
 .tagline {
   padding: var(--space-primary);
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .cass-grid {
