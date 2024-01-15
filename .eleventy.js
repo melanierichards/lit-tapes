@@ -12,36 +12,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/manifest.webmanifest');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
 
-    // Prettify slug names
-    /*
-    eleventyConfig.addFilter('prettySlugName', function(value) {
-      let slugString = value.replace('-', ' ').split(' ');
-      let prettyString = [];
-      for (let word of slugString) {
-        prettyString.push(word.charAt(0).toUpperCase()+ word.slice(1));
-      }
-      return prettyString.join(' ');
-    });
-    */
-
-    // UTILITIES
-
-      // LIMIT ARRAY
-      /*
-      eleventyConfig.addFilter('limit', function (arr, limit) {
-        return arr.slice(0, limit);
-      });
-      */
-
-      // OFFSET ARRAY
-      /*
-      eleventyConfig.addFilter('offset', function (arr, limit) {
-        return arr.slice(limit + 1);
-      });
-      */
-    
     // NAVIGATION
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+    // eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // POSTS
 

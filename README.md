@@ -4,9 +4,6 @@ Playlists made from songs mentioned in books
 
 ## Setup from Template Checklist
 
-* [x] Update `package.json`, `_data/site.json`, and `feed.njk` with project details
-* [ ] Go thru `eleventy.js` and un-comment or delete utilities
-* [ ] Update or remove `icon-sprite.njk`
 * [ ] Update `head.njk` with any info for: RSS, social metadata, icons
 * [ ] Update images referenced in `manifest.webmanifest`
 
