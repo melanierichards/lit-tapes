@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
 
     // SHORTCODE - TIDAL PLAYER
     eleventyConfig.addShortcode("tidalPlayer", function(playlistId) {
-      return `<div style="position: relative; padding-bottom: 75vh; height: 0; overflow: hidden; max-width: 100%;"><iframe src="https://embed.tidal.com/playlists/${playlistId}" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>`;
+      return `<div style="position: relative; padding-bottom: 75vh; height: 0; overflow: hidden; max-width: 100%;"><iframe title="Playlist for this book on Tidal" src="https://embed.tidal.com/playlists/${playlistId}" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; min-height: 100%; margin: 0 auto;"></iframe></div>`;
     });
   
   // CUSTOMIZE INPUT DIRECTORY
