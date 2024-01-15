@@ -32,3 +32,13 @@
   src: url("../fonts/LeagueGothic-Regular.woff2") format("woff2"),
        url("../fonts/LeagueGothic-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Young Serif Regular";
+  src: url("../fonts/YoungSerif-Regular.woff2") format("woff2"),
+       url("../fonts/YoungSerif-Regular.woff") format("woff"),
+       url("../fonts/YoungSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
