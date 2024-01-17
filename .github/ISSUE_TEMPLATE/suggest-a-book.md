@@ -2,7 +2,7 @@
 name: Suggest a book
 about: What should I read next?
 title: '[Book suggestion] "Title" by Author'
-labels: ''
+labels: 'book-suggestion'
 assignees: melanierichards
 
 ---
