@@ -27,7 +27,8 @@
     "canvasText": "#1b1b1b",
     "heading": "#A00053",
     "selectionBg": "#966f00",
-    "selectionText": "#fff"
+    "selectionText": "#fff",
+    "subtleText": "#666"
   },
   "darkTheme": {
     "accent": "#ec80d5",
@@ -36,6 +37,7 @@
     "canvasText": "#dedede",
     "heading": "#E8AB00",
     "selectionBg": "#E8AB00",
-    "selectionText": "#000"
+    "selectionText": "#000",
+    "subtleText": "#a2a2a2"
   }
 }

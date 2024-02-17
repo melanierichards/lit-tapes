@@ -7,6 +7,7 @@
     --link-hover-border: {{ light.accent }};
     --selection-bg: {{ light.selectionBg }};
     --selection-text: {{ light.selectionText }};
+    --subtle-text: {{ light.subtleText }};
   }
 
   h1, h2, h3,
@@ -26,6 +27,7 @@
     --link-hover-border: {{ dark.accent }};
     --selection-bg: {{ dark.selectionBg }};
     --selection-text: {{ dark.selectionText }};
+    --subtle-text: {{ dark.subtleText }};
   }
 
   [data-prefers-theme="dark"] h1, 
@@ -50,6 +52,7 @@
       --link-hover-border: {{ dark.accent }};
       --selection-bg: {{ dark.selectionBg }};
       --selection-text: {{ dark.selectionText }};
+      --subtle-text: {{ dark.subtleText }};
     }
 
     :root:not([data-prefers-theme="light"]) h1,

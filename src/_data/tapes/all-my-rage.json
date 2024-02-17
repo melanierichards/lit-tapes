@@ -29,7 +29,8 @@
     "canvasText": "#300442",
     "heading": "#6b0891",
     "selectionBg": "rgba(255,255,255,.9)",
-    "selectionText": "#000"
+    "selectionText": "#000",
+    "subtleText": "#666"
   },
   "darkTheme": {
     "accent": "#fb5c5a",
@@ -38,6 +39,7 @@
     "canvasText": "#eee7f1",
     "heading": "#d69eec",
     "selectionBg": "rgba(255,255,255,.9)",
-    "selectionText": "#000"
+    "selectionText": "#000",
+    "subtleText": "#a2a2a2"
   }
 }

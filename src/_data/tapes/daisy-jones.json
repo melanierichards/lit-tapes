@@ -1,0 +1,45 @@
+{
+  "author": "Daisy Jones & The Six",
+  "bookDetails": {
+    "cover": "daisy-jones.jpg",
+    "genres": ["fiction", "historical fiction"],
+    "pages": "339",
+    "bookshopId": "9780593598429"
+  },
+  "playlistDetails": {
+    "tracks": "6",
+    "runtime": "19:10:00",
+    "tidalId": "0586967a-4d1c-4a0c-b6c9-c8ea1aa6300a"
+  },
+  "cassette": {
+    "deco": "stripes",
+    "colorDesc": "list of colors for cassette tape alt text",
+    "colorScheme": "dark",
+    "color": "#442D27",
+    "thingyColor": "#5A3B33",
+    "labelColor": "#E2C6A2",
+    "stripe1": "#8C5C3E",
+    "stripe2": "#9A998F",
+    "stripe3": "#687F9F"
+  },
+  "lightTheme": {
+    "accent": "#61230A",
+    "border": "#687F9F",
+    "canvasBg": "#EAD6BC",
+    "canvasText": "#39201A",
+    "heading": "#61230A",
+    "selectionBg": "#7e92ad",
+    "selectionText": "#000",
+    "subtleText": "#61230A"
+  },
+  "darkTheme": {
+    "accent": "#9A998F",
+    "border": "#9A998F",
+    "canvasBg": "#140e0c",
+    "canvasText": "#DEBE95",
+    "heading": "#a86e4a",
+    "selectionBg": "#DEBE95",
+    "selectionText": "#39201A",
+    "subtleText": "#a86e4a"
+  }
+}
