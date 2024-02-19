@@ -1,0 +1,42 @@
+{
+  "author": "Samantha Irby",
+  "bookDetails": {
+    "cover": "wow-no-thank-you.webp",
+    "genres": ["non-fiction", "essays"],
+    "pages": "336",
+    "bookshopId": "9780525563488"
+  },
+  "playlistDetails": {
+    "tracks": "51",
+    "runtime": "04:05:25",
+    "tidalId": "6ce0f66b-4ea1-407f-9218-acd3efa17ebc"
+  },
+  "cassette": {
+    "deco": "none",
+    "colorDesc": "lime green and black",
+    "colorScheme": "light",
+    "color": "#7BBE45",
+    "thingyColor": "#92c965",
+    "labelColor": "#1b1b1b"
+  },
+  "lightTheme": {
+    "accent": "#69a439",
+    "border": "#7BBE45",
+    "canvasBg": "#fefefe",
+    "canvasText": "#333",
+    "heading": "#53822d",
+    "selectionBg": "#48DAED",
+    "selectionText": "#000",
+    "subtleText": "#53822d"
+  },
+  "darkTheme": {
+    "accent": "#7BBE45",
+    "border": "#7BBE45",
+    "canvasBg": "#1b1b1b",
+    "canvasText": "#dedede",
+    "heading": "#7BBE45",
+    "selectionBg": "#7BBE45",
+    "selectionText": "#000",
+    "subtleText": "#a2a2a2"
+  }
+}
