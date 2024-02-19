@@ -142,12 +142,16 @@ table {
   width: 100%;
 }
 
+tr {
+  border-bottom: 1px solid var(--tr-border);
+}
+
 th {
   border-bottom: 1px solid currentColor;
 }
 
 th, td {
-  padding: var(--space-xxxs) var(--space-xs);
+  padding: var(--space-xxs) var(--space-xs);
 
   &:first-child {
     padding-left: 0;

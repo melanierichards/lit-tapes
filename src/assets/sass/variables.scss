@@ -72,6 +72,7 @@ $bp-xl: 80rem;
   --skip-link-bg: #1b1b1b;
   --skip-link-text: #fefefe;
   --subtle-text: #666;
+  --tr-border: rgba(0,0,0,.2);
 }
 
 @mixin darkScheme {
@@ -80,6 +81,7 @@ $bp-xl: 80rem;
   --canvas-bg: #1b1b1b;
   --canvas-text: #dedede;
   --subtle-text: #a2a2a2;
+  --tr-border: rgba(255,255,255,.175);
 }
 
 [data-prefers-theme="dark"] {
