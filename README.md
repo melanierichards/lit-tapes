@@ -1,6 +1,6 @@
 # Lit Tapes
 
-Playlists made from songs mentioned in books
+Playlists made from songs mentioned in books. [Visit the live site](https://littapes.melanie-richards.com/)
 
 -------------------------------------------------------------
 
