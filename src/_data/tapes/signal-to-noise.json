@@ -1,0 +1,43 @@
+{
+  "author": "Silvia Moreno-Garcia",
+  "bookDetails": {
+    "cover": "signal-to-noise.webp",
+    "genres": ["fiction"],
+    "pages": "352",
+    "bookshopId": "9781786186447"
+  },
+  "playlistDetails": {
+    "tracks": "66",
+    "runtime": "04:31:53",
+    "tidalId": "e5af57de-9193-483d-bbca-cc9d999eb31d"
+  },
+  "cassette": {
+    "deco": "bandBottom",
+    "colorDesc": "very dark purple, fuschia, light blue, and greenish-cream",
+    "colorScheme": "dark",
+    "color": "#1C1444",
+    "thingyColor": "#271C5E",
+    "labelColor": "#E635A6",
+    "bandColor": "#EBF4D7"
+  },
+  "lightTheme": {
+    "accent": "#E635A6",
+    "border": "#E635A6",
+    "canvasBg": "#F5F4FC",
+    "canvasText": "#261447",
+    "heading": "#2C206B",
+    "selectionBg": "#74CCDB",
+    "selectionText": "#000",
+    "subtleText": "#2C206B"
+  },
+  "darkTheme": {
+    "accent": "#74CCDB",
+    "border": "#74CCDB",
+    "canvasBg": "#110C2A",
+    "canvasText": "#EBF4D7",
+    "heading": "#E635A6",
+    "selectionBg": "#74CCDB",
+    "selectionText": "#000",
+    "subtleText": "#74CCDB"
+  }
+}
