@@ -4,8 +4,28 @@
  *  =============================================
  */
 
+.c-pagination {
+  position: relative;
+
+  &::after {
+    background-color: currentColor;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 1px);
+    width: 100%;
+  }
+}
+
 .c-pagination__links {
   position: relative;
+  text-align: center;
+
+  a + a {
+    margin-top: var(--space-l);
+  }
 }
  
 a.c-pagination__older,
@@ -46,10 +66,21 @@ a.c-pagination__newer {
 }
 
 @media (min-width: 32em) {
+  .c-pagination::after {
+    height: 100%;
+    left: calc(50% - 1px);
+    top: 0;
+    width: 1px;
+  }
+
   .c-pagination__links {
     align-items: center;
     display: flex;
     justify-content: flex-end;
+
+    a + a {
+      margin-top: 0;
+    }
   }
 
   .c-pagination__links--has-next {

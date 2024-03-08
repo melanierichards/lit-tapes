@@ -21,6 +21,10 @@
     border-color: {{ light.border }} !important;
   }
 
+  .c-pagination::after {
+    background-color: {{ light.border }};
+  }
+
   [data-prefers-theme="dark"] {
     --canvas-bg: {{ dark.canvasBg }};
     --canvas-text: {{ dark.canvasText }};
@@ -43,6 +47,10 @@
   [data-prefers-theme="dark"] .post-details__subsection,
   [data-prefers-theme="dark"] .c-pagination {
     border-color: {{ dark.border }} !important;
+  }
+
+  [data-prefers-theme="dark"] .c-pagination::after {
+    background-color: {{ dark.border }};
   }
 
   @media (prefers-color-scheme: dark) {
@@ -68,6 +76,10 @@
     :root:not([data-prefers-theme="light"]) .post-details__subsection,
     :root:not([data-prefers-theme="light"]) .c-pagination {
       border-color: {{ dark.border }} !important;
+    }
+
+    :root:not([data-prefers-theme="light"]) .c-pagination::after {
+      background-color: {{ dark.border }};
     }
   }
 </style>
