@@ -9,6 +9,10 @@ main {
   border-radius: 12px;
   margin-top: var(--space-primary);
   overflow: hidden; /* Clip outline from post grid */
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
 }
 
 section, .l-section {
