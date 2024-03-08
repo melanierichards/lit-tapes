@@ -1,0 +1,42 @@
+{
+  "author": "Stephen Chbosky",
+  "bookDetails": {
+    "cover": "the-perks-of-being-a-wallflower.webp",
+    "genres": ["fiction", "YA"],
+    "pages": "240",
+    "bookshopId": "9780671027346"
+  },
+  "playlistDetails": {
+    "tracks": "17",
+    "runtime": "01:02:27",
+    "tidalId": "66a69084-5e98-42e4-a1a8-e030ebada0e4"
+  },
+  "cassette": {
+    "deco": "none",
+    "colorDesc": "yellow-y lime green and white",
+    "colorScheme": "light",
+    "color": "#E1DC0C",
+    "thingyColor": "#F4EF2C",
+    "labelColor": "#fff"
+  },
+  "lightTheme": {
+    "accent": "currentColor",
+    "border": "#E1DC0C",
+    "canvasBg": "#fefefe",
+    "canvasText": "#333",
+    "heading": "#333",
+    "selectionBg": "#E1DC0C",
+    "selectionText": "#000",
+    "subtleText": "#666"
+  },
+  "darkTheme": {
+    "accent": "#E1DC0C",
+    "border": "#E1DC0C",
+    "canvasBg": "#1b1b1b",
+    "canvasText": "#dedede",
+    "heading": "#E1DC0C",
+    "selectionBg": "#E1DC0C",
+    "selectionText": "#000",
+    "subtleText": "#a2a2a2"
+  }
+}
