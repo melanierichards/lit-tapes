@@ -1,0 +1,42 @@
+{
+  "author": "Leigh Bardugo",
+  "bookDetails": {
+    "cover": "hell-bent.jpg",
+    "genres": ["fiction", "fantasy", "thriller"],
+    "pages": "481",
+    "bookshopId": "9781250378064"
+  },
+  "playlistDetails": {
+    "tracks": "6",
+    "runtime": "00:30:11",
+    "tidalId": "5e0708b1-d74f-4338-984d-73f434b9d87b"
+  },
+  "cassette": {
+    "deco": "none",
+    "colorDesc": "list of colors for cassette tape alt text",
+    "colorScheme": "light",
+    "color": "#aeadab",
+    "thingyColor": "#D9D9D8",
+    "labelColor": "#fff"
+  },
+  "lightTheme": {
+    "accent": "#b34047",
+    "border": "#aeadab",
+    "canvasBg": "#fefefe",
+    "canvasText": "#333",
+    "heading": "#333",
+    "selectionBg": "#EBC9C7",
+    "selectionText": "#000",
+    "subtleText": "#666"
+  },
+  "darkTheme": {
+    "accent": "#EBC9C7",
+    "border": "#8b8b8b",
+    "canvasBg": "#1b1b1b",
+    "canvasText": "#dedede",
+    "heading": "#C0C0BE",
+    "selectionBg": "#DFAAA6",
+    "selectionText": "#000",
+    "subtleText": "#a2a2a2"
+  }
+}
