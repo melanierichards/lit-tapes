@@ -1,0 +1,43 @@
+{
+  "author": "Jade Song",
+  "bookDetails": {
+    "cover": "chlorine.webp",
+    "genres": ["fiction, horror, literary fiction"],
+    "pages": "237",
+    "bookshopId": "9780063257610"
+  },
+  "playlistDetails": {
+    "tracks": "7",
+    "runtime": "00:31:06",
+    "tidalId": "0bf872b0-8198-4f5d-baaf-df44a17a5ccb"
+  },
+  "cassette": {
+    "deco": "bandTop",
+    "colorDesc": "list of colors for cassette tape alt text",
+    "colorScheme": "dark",
+    "color": "#0A589B",
+    "thingyColor": "#277AA7",
+    "labelColor": "#3D857D",
+    "bandColor": "#2BB4A6"
+  },
+  "lightTheme": {
+    "accent": "#3D857D",
+    "border": "#095798",
+    "canvasBg": "#D6EAF5",
+    "canvasText": "#092C44",
+    "heading": "#084A82",
+    "selectionBg": "#FEF100",
+    "selectionText": "#000",
+    "subtleText": "#666"
+  },
+  "darkTheme": {
+    "accent": "#2BB4A6",
+    "border": "#2BB4A6",
+    "canvasBg": "#092C44",
+    "canvasText": "#D6EAF5",
+    "heading": "#D6EAF5",
+    "selectionBg": "#FEF100",
+    "selectionText": "#000",
+    "subtleText": "#a2a2a2"
+  }
+}
