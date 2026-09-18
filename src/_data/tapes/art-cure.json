@@ -1,0 +1,45 @@
+{
+  "author": "Daisy Fancourt",
+  "bookDetails": {
+    "cover": "art-cure.jpeg",
+    "genres": ["non-fiction", "psychology"],
+    "pages": "320",
+    "bookshopId": "9781250364531"
+  },
+  "playlistDetails": {
+    "tracks": "30",
+    "runtime": "02:42:46",
+    "tidalId": "3a6c680b-d20b-4dc3-bd81-194363314017"
+  },
+  "cassette": {
+    "deco": "stripes",
+    "colorDesc": "list of colors for cassette tape alt text",
+    "colorScheme": "light",
+    "color": "#FBECD9",
+    "thingyColor": "#FDF5EB",
+    "labelColor": "#fff",
+    "stripe1": "#E83B1D",
+    "stripe2": "#FAD940",
+    "stripe3": "#FAD940"
+  },
+  "lightTheme": {
+    "accent": "#5B1E57",
+    "border": "currentColor",
+    "canvasBg": "#FBECD9",
+    "canvasText": "#5B1E57",
+    "heading": "#E83B1D",
+    "selectionBg": "#FAD940",
+    "selectionText": "#000",
+    "subtleText": "#5B1E57"
+  },
+  "darkTheme": {
+    "accent": "#FAD940",
+    "border": "currentColor",
+    "canvasBg": "#392238",
+    "canvasText": "#FBECD9",
+    "heading": "#F6AFA2",
+    "selectionBg": "#FAD940",
+    "selectionText": "#000",
+    "subtleText": "#FBECD9"
+  }
+}
